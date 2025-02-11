@@ -1,38 +1,33 @@
 import requests
 
-# id:
-# title:
-# description
-# price
-# author
-# created_at
+# data = requests.post(
+#     "http://127.0.0.1:8002/advertisement", json={"title": "phone", "price": "20000", "description": "newdewsc", "author": "Author_Name"}
+# )
+# print(data.status_code)
+# print(data.json())
 
-data = requests.post(
-    "http://127.0.0.1:8000/advertisement", json={"title": "New_phone", "price": 20000, "description": "newdewsc", "author": "Author_Name"}
-)
+# data = requests.get("http://127.0.0.1:8002/advertisement/5")
+# print(data.status_code)
+# print(data.json())
+
+# data = requests.patch("http://127.0.0.1:8002/advertisement/5", json={"title": "phone", "price": "220000", "description": "advertisment", "author": "User1"})
+# print(data.status_code)
+# print(data.json())
+
+data = requests.get("http://127.0.0.1:8002/advertisement/", params={"title": "phone"})
 print(data.status_code)
 print(data.json())
 
-# data = requests.get("http://127.0.0.1:8000/advertisement/1")
+# # data = requests.delete("http://127.0.0.1:8002/advertisement/2")
+# # print(data.status_code)
+# # print(data.json())
+
+# data = requests.get("http://127.0.0.1:8002/advertisement/5")
 # print(data.status_code)
 # print(data.json())
 
-# data = requests.patch("http://127.0.0.1:8000/api/v1/todo/7", json={"done": True, "title": "new_todo"})
-# print(data.status_code)
-# print(data.json())
-#
-# data = requests.get("http://127.0.0.1:8000/api/v1/todo/7")
-# print(data.status_code)
-# print(data.json())
-
-# data = requests.get("http://127.0.0.1:8000/api/v1/todo/", params={"title": "new_todo", "important": True})
-# print(data.status_code)
-# print(data.json())
-
-# data = requests.delete("http://127.0.0.1:8000/api/v1/todo/7")
-# print(data.status_code)
-# print(data.json())
-#
-# data = requests.get("http://127.0.0.1:8000/api/v1/todo/7")
+# data = requests.get(
+#     "http://127.0.0.1:8002/advertisement/2"
+# )
 # print(data.status_code)
 # print(data.json())

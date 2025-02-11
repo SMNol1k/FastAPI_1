@@ -1,5 +1,5 @@
 from fastapi import HTTPException
-from models import ORM_CLS, ORM_OBJ, Advirtesment
+from models import ORM_CLS, ORM_OBJ, Advertisment
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.asyncio import AsyncSession
 

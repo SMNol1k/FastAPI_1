@@ -24,8 +24,8 @@ class CreateAdvirtesmentResponse(IdResponse):
 
 
 class UpdateAdvirtesmentRequest(BaseModel):
-    title: str
-    description: str = None
+    title: str 
+    description: str = None 
     price: int = None
     author: str
 
@@ -36,10 +36,10 @@ class UpdateAdvirtesmentResponse(SuccessResponse):
 class GetAdvirtesmentResponse(BaseModel):
     id: int
     title: str
-    description: str
-    price: int
+    description: str = None
+    price: int = None
     author: str
-    created_at: datetime.datetime
+    create_date: datetime.datetime
 
 
 class SearchAdvirtesmentResponse(BaseModel):
